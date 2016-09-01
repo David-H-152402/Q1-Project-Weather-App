@@ -2,16 +2,22 @@ $(document).ready(function() {
   console.log("ready!");
   $('#modal1').openModal();
   var testing;
+
   $('#modal-button').on('click', function(event) {
     event.preventDefault();
-    ajaxRequest();
+    var myCity = $('#city').val()
+    var myState = $('#state').val()
+    console.log('myCity', myCity);
+    console.log('myState', myState);
+    ajaxRequest(myCity, myState);
   });
 
-  function ajaxRequest() {
+
+  function ajaxRequest(city, state) {
     console.log("ajax request invoked");
     $.ajax({
       method: 'GET',
-      url: 'http://api.wunderground.com/api/683a8f0a30e49337/forecast/q/CO/Boulder.json',
+      url: `http://api.wunderground.com/api/683a8f0a30e49337/forecast/q/${state}/${city}.json`,
       dataType: 'json',
       success: function(data) {
         console.log('success!', data);
@@ -31,6 +37,7 @@ $(document).ready(function() {
         weatherData.maxWind = data.forecast.simpleforecast.forecastday[0].maxwind.mph + data.forecast.simpleforecast.forecastday[0].maxwind.dir
         weatherData.test = weatherData.maxWind
         console.log(weatherData.test);
+
         putDataIn(weatherData);
       }
 
@@ -51,5 +58,6 @@ $(document).ready(function() {
       weatherData.loTempFahrenheit + " F " + " | " + weatherData.loTempCelsius + " C ")
     $('#conditions').text(weatherData.conditions);
     $('#wind').text("Max Wind Speed : " + weatherData.maxWind);
+    $('#icon').html(`<img src="${weatherData.icon}">`)
   }
 });
