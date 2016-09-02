@@ -1,22 +1,49 @@
 html {
   background-size: cover;
-  background: url("../img/city_sky.jpg") no-repeat center center;
+  background: url("../img/darkforest.jpg") no-repeat center center;
   height: 100%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
 #logo-container {
   margin-left: auto;
   margin-right: auto;
-  background: url("../img/swmainlogo2.png") no-repeat left;
+  background: url("../img/swmainlogo2.png") no-repeat center;
   height: 100%;
   width: 80%;
 }
 #index-banner {
-  background: url("../img/swlogoletters2.png") no-repeat center;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  width: 80%;
+  width: 100%;
+}
+.card {
+  background-color: rgba(89, 191, 98, .75);
+  border-radius: 12px;
+  border: 2px solid;
+  box-shadow: 5px 5px 8px #2387BF;
+  font-weight: bold;
+  height: auto;
+  width: auto;
+}
+#modal1 {
+  background-color: rgba(242, 242, 242, .75);
+  font-weight: bold;
+}
+span {
+  color: black;
+  font-family: sans-serif;
+}
+.divider {
+  background-color: rgb(191, 18, 190);
 }

@@ -21,21 +21,13 @@
 <body>
   <nav class="black" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Options</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a id="logo-container" class="brand-logo center"></a>
     </div>
   </nav>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>WELCOME to SIMPLY WEATHER!</h4>
+      <h4>WELCOME to SIMPLY WEATHER</h4>
       <form class="col s12">
         <div class="row">
           <div class="input-field col s12">
@@ -43,7 +35,7 @@
             <input id="city" type="text" class="validate">
           </div>
           <div class="input-field col s12">
-            <label for="state">Enter State</label>
+            <label for="state">Enter State(abbr)</label>
             <input id="state" type="text" class="validate">
           </div>
           <a href="#" id="modal-button" class=" modal-action modal-close waves-effect waves-green btn-flat">Send</a>
@@ -57,27 +49,24 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div class="row">
-        <div class="col s12 m5">
-          <div class="card-panel black">
-            <div class="card medium">
-              <ul class="center-align">
-                <li>
-                  <h3><span id="day" class="blue-text text-darken-2">Today</span></h3></li>
-                <li id="time">02:45 MST</li>
-                <li id="icon"></li>
-                <div class="divider"></div>
-                <li id="hitemp">78 &deg F / 22 &deg C</li>
-                <li id="lotemp">78 &deg F / 22 &deg C</li>
-                <div class="divider"></div>
-                <li id="conditions">Cloudy with a chance of Showers</li>
-                <div class="divider"></div>
-                <li id="wind">Max wind</li>
-                <div class="divider"></div>
-                <div class="card-action">
-                  <a href="#"><span class="pink-text text-accent-3">Click for Map</span></a>
-                </div>
-              </ul>
-            </div>
+        <div class="col s12 m6 l5 center-align">
+          <div class="card hoverable center-align">
+            <ul class="center">
+              <li>
+                <h3><span id="day0">Day 0</span></h3></li>
+              <li>Today</li>
+              <div class="divider"></div>
+              <li id="time0">02:45 MST</li>
+              <li id="icon0"></li>
+              <div class="divider"></div>
+              <li id="hitemp0">78 &deg F / 22 &deg C</li>
+              <li id="lotemp0">78 &deg F / 22 &deg C</li>
+              <div class="divider"></div>
+              <li id="conditions0">Cloudy with a chance of Showers</li>
+              <div class="divider"></div>
+              <li id="wind0">wind speed</li>
+              <div class="divider"></div>
+            </ul>
           </div>
         </div>
       </div>
@@ -85,111 +74,79 @@
   </div>
   <div container id="main-banner">
     <div class="row">
-      <div class="col s12 m6 l3">
+      <div class="col s12 m4 l4">
         <div class="row">
-          <div class="col s12 m7">
-            <div class="card">
+          <div class="col s12 m6">
+            <div class="card hoverable">
               <ul class="center-align">
-                <li id="day">
-                  <h3>Friday</h3></li>
-                <li id="date">02:45 MST</li>
-                <li id="icon"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
+                <li>
+                  <h3><span id="day1">Day 1</span></h3></li>
                 <div class="divider"></div>
-                <li id="temp">78 &deg F / 22 &deg C</li>
+                <li id="date1">02:45 MST</li>
+                <li id="icon1"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
                 <div class="divider"></div>
-                <li id="conditions">Cloudy with a chance of Showers</li>
+                <li id="hitemp1">78 &deg F / 22 &deg C</li>
+                <li id="lotemp1">78 &deg F / 22 &deg C</li>
                 <div class="divider"></div>
-                <li id="precipitation">60%</li>
+                <li id="conditions1">Cloudy with a chance of Showers</li>
+                <div class="divider"></div>
+                <li id="wind1">wind speed</li>
                 <div class="divider"></div>
               </ul>
-              <div class="card-action">
-                <a href="#"><span class="pink-text text-accent-3">Click for Map</span></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l3">
+      <div class="col s12 m4 l4">
         <div class="row">
-          <div class="col s12 m7">
-            <div class="card">
+          <div class="col s12 m6">
+            <div class="card hoverable">
               <ul class="center-align">
-                <li id="day">
-                  <h3>Saturday</h3></li>
-                <li id="date">02:45 MST</li>
-                <li id="icon"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
+                <li>
+                  <h3><span id="day2">Day 2</span></h3></li>
                 <div class="divider"></div>
-                <li id="temp">78 &deg F / 22 &deg C</li>
+                <li id="date2">02:45 MST</li>
+                <li id="icon2"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
                 <div class="divider"></div>
-                <li id="conditions">Cloudy with a chance of Showers</li>
+                <li id="hitemp2">78 &deg F / 22 &deg C</li>
+                <li id="lotemp2">78 &deg F / 22 &deg C</li>
                 <div class="divider"></div>
-                <li id="precipitation">60%</li>
+                <li id="conditions2">Cloudy with a chance of Showers</li>
+                <div class="divider"></div>
+                <li id="wind2">wind speed</li>
                 <div class="divider"></div>
               </ul>
-              <div class="card-action">
-                <a href="#"><span class="pink-text text-accent-3">Click for Map</span></a>
-              </div>
             </div>
+
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l3">
+      <div class="col s12 m4 l4">
         <div class="row">
-          <div class="col s12 m7">
-            <div class="card">
+          <div class="col s12 m6">
+            <div class="card hoverable">
               <ul class="center-align">
-                <li id="day">
-                  <h3>Sunday</h3></li>
-                <li id="date">02:45 MST</li>
-                <li id="icon"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
+                <li>
+                  <h3><span id="day3">Day 3</span></h3></li>
                 <div class="divider"></div>
-                <li id="temp">78 &deg F / 22 &deg C</li>
+                <li id="date3">02:45 MST</li>
+                <li id="icon3"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
                 <div class="divider"></div>
-                <li id="conditions">Cloudy with a chance of Showers</li>
+                <li id="hitemp3">78 &deg F / 22 &deg C</li>
+                <li id="lotemp3">78 &deg F / 22 &deg C</li>
                 <div class="divider"></div>
-                <li id="precipitation">60%</li>
+                <li id="conditions3">Cloudy with a chance of Showers</li>
+                <div class="divider"></div>
+                <li id="wind3">wind speed</li>
                 <div class="divider"></div>
               </ul>
-              <div class="card-action">
-                <a href="#"><span class="pink-text text-accent-3">Click for Map</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6 l3">
-        <div class="row">
-          <div class="col s12 m7">
-            <div class="card">
-              <ul class="center-align">
-                <li id="day">
-                  <h3>Monday</h3></li>
-                <li id="date">02:45 MST</li>
-                <li id="icon"><img src="http://icons.wxug.com/i/c/k/nt_partlycloudy.gif"></li>
-                <div class="divider"></div>
-                <li id="temp">78 &deg F / 22 &deg C</li>
-                <div class="divider"></div>
-                <li id="conditions">Cloudy with a chance of Showers</li>
-                <div class="divider"></div>
-                <li id="precipitation">60%</li>
-                <div class="divider"></div>
-              </ul>
-              <div class="card-action">
-                <a href="#"><span class="pink-text text-accent-3">Click for Map</span></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer-copyright black">
-    <div class="container black">
-      Made by <a class="orange-text text-lighten-3" href="">David Hernandez</a>
-    </div>
-  </div>
-  </footer>
-  <!--  Scripts-->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/app.js"></script>
